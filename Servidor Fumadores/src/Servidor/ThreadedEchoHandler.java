@@ -30,24 +30,38 @@ public class ThreadedEchoHandler extends Thread{
 
 
 	    try {
+	    	//Se crean los canales de entrada y salida del socket.
 	    	 entrada = new BufferedReader(new InputStreamReader(ss.getInputStream()));
 		      salida = new PrintWriter(new BufferedWriter(new 
 			  OutputStreamWriter(ss.getOutputStream())),true);
+		    //Se recibe un mensaje y se manipula para determinar el número de usuario y tipo del mismo.
 		      String accion[] = entrada.readLine().split("x");
-		      System.out.println("Servidor - "+accion[1]+" "+accion[0]+" "+ "conectado");
+		      if(Integer.parseInt(accion[0])==0)
+		      System.out.println("Servidor - Fumador(Tabaco) conectado.");
+		      if(Integer.parseInt(accion[0])==1)
+		      System.out.println("Servidor - Fumador(Papel) conectado.");
+		      if(Integer.parseInt(accion[0])==2)
+		      System.out.println("Servidor - Fumador(Fosforo) conectado.");
+		    //Bucle infinito que determina la acción del usuario dependiendo de su tipo.
 		      while (true) {
 		    	 
-		    	  
+		    	
 		    	  if (accion[1].equals("Fumador")){
-		    
+		    		  	//Se indica que el fumador intentará fumar, enviando su id de fumador.
 						banco.fumar(Integer.parseInt(accion[0]));
+						//El fumador tardará cinco(5) segundos fumando.
 						Thread.sleep(5*1000);
+						//El fumador indicará que dejará de fumar, enviando su id de fumador.
 						banco.dejarFumar(Integer.parseInt(accion[0]));
+						//El fumador esperará cinco(5) segundos para volver a intentar fumar.
 						Thread.sleep(5*1000);
 					
 		    	  }else{
+		    		  //Se obtiene un número al azar entre [0,3) correspondiente a un número de ingrediente que NO será colocado en el banco.
 		    		  int ingrediente = randomN.nextInt(3);
+		    		//El vendedor esperará cinco(5) segundos para colocar los ingredientes en el banco.
 		    		  Thread.sleep(5*1000);
+		    		//El vendedor añade los ingredientes en el banco, enviando el ingrediente que no se colocará.
 		    		  banco.nuevosIngredientes(ingrediente);
 		    	  }
 	      
