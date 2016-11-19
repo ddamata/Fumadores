@@ -1,0 +1,58 @@
+package servidor;
+
+public class Banco {
+	private boolean fumando = false;
+	private boolean hayIngredientes = false;
+	private int ingredientes;
+	
+	public synchronized void nuevosIngredientes (int ingredienteNuevo) throws  InterruptedException {
+		while(hayIngredientes || fumando){
+			wait();
+		}
+		this.ingredientes = ingredienteNuevo;
+		hayIngredientes = true;
+		switch(ingredienteNuevo){
+			case 0:
+				System.out.println("Vendedor - Se ha agregado papel y fosforo al banco.");
+			break;
+			case 1:
+				System.out.println("Vendedor - Se ha agregado tabaco y fosforo al banco.");
+			break;
+			case 2:
+				System.out.println("Vendedor - Se ha agregado tabaco y papel al banco.");
+			break;
+		}
+		notifyAll();
+	} 
+	
+	
+	public synchronized void fumar (int id)  throws  InterruptedException {
+		while (!hayIngredientes || fumando ||ingredientes != id){
+			wait();
+		}
+		switch(id){
+			case 0:
+				System.out.println("Fumador "+id+" - Ha recogido papel y fósforo del banco.");
+				System.out.println("Fumador "+id+" - Fuma.");
+			break;
+			case 1:
+				System.out.println("Vendedor - Ha recogido tabaco y fosforo del banco.");
+				System.out.println("Fumador "+id+" - Fuma.");
+			break;
+			case 2:
+				System.out.println("Vendedor - Ha recogido tabaco y papel del banco.");
+				System.out.println("Fumador "+id+" - Fuma.");
+			break;
+		}
+		hayIngredientes = false;
+		fumando= true;
+	}
+	
+	
+	public synchronized void dejarFumar (int id) {
+		fumando = false;
+		System.out.println("Fumador "+id+" - Termina de fumar.");
+		notifyAll();
+	}
+
+}
