@@ -34,20 +34,20 @@ public class ThreadedEchoHandler extends Thread{
 		      salida = new PrintWriter(new BufferedWriter(new 
 			  OutputStreamWriter(ss.getOutputStream())),true);
 		      String accion[] = entrada.readLine().split("x");
-		      System.out.println(accion[1]+" "+accion[0]+" "+ "conectado");
+		      System.out.println("Servidor - "+accion[1]+" "+accion[0]+" "+ "conectado");
 		      while (true) {
 		    	 
 		    	  
 		    	  if (accion[1].equals("Fumador")){
 		    
 						banco.fumar(Integer.parseInt(accion[0]));
-						Thread.sleep(randomN.nextInt(300));
+						Thread.sleep(5*1000);
 						banco.dejarFumar(Integer.parseInt(accion[0]));
-						Thread.sleep(randomN.nextInt(300));
+						Thread.sleep(5*1000);
 					
 		    	  }else{
 		    		  int ingrediente = randomN.nextInt(3);
-		    		  Thread.sleep(randomN.nextInt(300));
+		    		  Thread.sleep(5*1000);
 		    		  banco.nuevosIngredientes(ingrediente);
 		    	  }
 	      

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Traza>
+  <Hecho>
+    <Hora>16:03:55</Hora>
+    <Actor>Vendedor</Actor>
+    <Accion>Agrego papel y fosforo al banco.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:04:03</Hora>
+    <Actor>Fumador 0</Actor>
+    <Accion>Recogio papel y fosforo del banco.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:04:03</Hora>
+    <Actor>Fumador 0</Actor>
+    <Accion>Fuma</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:04:08</Hora>
+    <Actor>Fumador 0</Actor>
+    <Accion>Dejo de fumar</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:04:08</Hora>
+    <Actor>Vendedor</Actor>
+    <Accion>Agrego papel y fosforo al banco.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:04:13</Hora>
+    <Actor>Fumador 0</Actor>
+    <Accion>Recogio papel y fosforo del banco.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:04:13</Hora>
+    <Actor>Fumador 0</Actor>
+    <Accion>Fuma</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:04:18</Hora>
+    <Actor>Fumador 0</Actor>
+    <Accion>Dejo de fumar</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:04:18</Hora>
+    <Actor>Vendedor</Actor>
+    <Accion>Agrego tabaco y papel al banco.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:04:18</Hora>
+    <Actor>Fumador 2</Actor>
+    <Accion>Recogio tabaco y papel del banco.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:04:18</Hora>
+    <Actor>Fumador 2</Actor>
+    <Accion>Fuma</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:04:23</Hora>
+    <Actor>Fumador 2</Actor>
+    <Accion>Dejo de fumar</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:04:23</Hora>
+    <Actor>Vendedor</Actor>
+    <Accion>Agrego tabaco y fosforo al banco.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:04:23</Hora>
+    <Actor>Fumador 1</Actor>
+    <Accion>Recogio tabaco y fosforo del banco.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:04:23</Hora>
+    <Actor>Fumador 1</Actor>
+    <Accion>Fuma</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:04:28</Hora>
+    <Actor>Fumador 1</Actor>
+    <Accion>Dejo de fumar</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:04:28</Hora>
+    <Actor>Vendedor</Actor>
+    <Accion>Agrego tabaco y fosforo al banco.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:04:33</Hora>
+    <Actor>Fumador 1</Actor>
+    <Accion>Recogio tabaco y fosforo del banco.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:04:33</Hora>
+    <Actor>Fumador 1</Actor>
+    <Accion>Fuma</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:04:38</Hora>
+    <Actor>Fumador 1</Actor>
+    <Accion>Dejo de fumar</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:04:38</Hora>
+    <Actor>Vendedor</Actor>
+    <Accion>Agrego tabaco y fosforo al banco.</Accion>
+  </Hecho>
+</Traza>
