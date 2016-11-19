@@ -1,4 +1,4 @@
-package Servidor;
+package servidor;
 
 
 import java.io.BufferedReader;
@@ -34,7 +34,7 @@ public class ThreadedEchoHandler extends Thread{
 		      salida = new PrintWriter(new BufferedWriter(new 
 			  OutputStreamWriter(ss.getOutputStream())),true);
 		      String accion[] = entrada.readLine().split("x");
-		      System.out.println(accion[0]+"   "+accion[1]);
+		      System.out.println(accion[1]+" "+accion[0]+" "+ "conectado");
 		      while (true) {
 		    	 
 		    	  
@@ -53,7 +53,6 @@ public class ThreadedEchoHandler extends Thread{
 	      
 		      }
 	    } catch (IOException e) {
-	    	System.out.println("PEO ACA");
 	      System.out.println("IOException: " + e.getMessage());
 	    } catch (InterruptedException e) {
 			// TODO Auto-generated catch block
@@ -61,10 +60,7 @@ public class ThreadedEchoHandler extends Thread{
 		} catch (NullPointerException e) {
 			e.printStackTrace();
         } 
-	  
-	
-
-	    
+ 
 	}
 	private Socket ss;
 	private int counter;

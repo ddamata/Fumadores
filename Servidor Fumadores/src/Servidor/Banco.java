@@ -1,4 +1,4 @@
-package Servidor;
+package servidor;
 
 public class Banco {
 	private boolean fumando = false;
@@ -11,14 +11,16 @@ public class Banco {
 		}
 		this.ingredientes = ingredienteNuevo;
 		hayIngredientes = true;
-		if (ingredienteNuevo == 0){
-		System.out.println("se a agregado el ingredeinete 1 y 2 ");
-		}else{
-			if (ingredienteNuevo == 1){
-				System.out.println("se a agregado el ingredeinete 0 y 2 ");
-				}else{
-					System.out.println("se a agregado el ingredeinete 0 y 1 ");
-				}
+		switch(ingredienteNuevo){
+			case 0:
+				System.out.println("Se ha agregado el ingrediente 1 y 2.");
+			break;
+			case 1:
+				System.out.println("Se ha agregado el ingrediente 0 y 2.");
+			break;
+			case 2:
+				System.out.println("Se ha agregado el ingrediente 0 y 1.");
+			break;
 		}
 		notifyAll();
 	} 
@@ -28,7 +30,7 @@ public class Banco {
 		while (!hayIngredientes || fumando ||ingredientes != id){
 			wait();
 		}
-		System.out.println("Fumador "+id+" empieza a fumar");
+		System.out.println("Fumador "+id+" empieza a fumar.");
 		hayIngredientes = false;
 		fumando= true;
 	}
@@ -36,7 +38,7 @@ public class Banco {
 	
 	public synchronized void dejarFumar (int id) {
 		fumando = false;
-		System.out.println("Fumador "+id+" dejo de fumar");
+		System.out.println("Fumador "+id+" dejo de fumar.");
 		notifyAll();
 	}
 
