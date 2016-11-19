@@ -1,4 +1,4 @@
-package Fuamdor;
+package fumador;
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.DataInputStream;
@@ -20,7 +20,7 @@ public class Main {
        
        
         try {
-            ecoSocket = new Socket("127.0.0.1", 50008);
+            ecoSocket = new Socket("192.168.1.111", 50008);
             salida = new DataOutputStream(ecoSocket.getOutputStream());
             entrada = new DataInputStream(ecoSocket.getInputStream());
 
@@ -29,9 +29,9 @@ public class Main {
         } catch (UnknownHostException e) {  
             System.err.println("No conozco al host: " + "192.168.1.119");
         } catch (IOException e) {
-            System.err.println("Error de E/S para la conexión con: " + "192.168.1.119");
+            System.err.println("Error de E/S para la conexion con: " + "192.168.1.119");
         }catch (NullPointerException e) {
-            System.err.println("Error de E/S para la conexión con: " + "192.168.1.119");
+            System.err.println("Error de E/S para la conexion con: " + "192.168.1.119");
         }
         
         if (ecoSocket != null && salida != null && entrada != null) {
@@ -39,9 +39,10 @@ public class Main {
         		   
         	
         		salida.writeBytes("0xFumador");
+        		salida.close();
         		
         	}catch (IOException e) {
-            System.err.println("E/S fallo en la conexión a: " + "192.168.1.119");
+            System.err.println("E/S fallo en la conexion a: " + "192.168.1.119");
             System.err.println("" + e.getMessage());
             
         	}

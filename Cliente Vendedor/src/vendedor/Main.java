@@ -18,7 +18,7 @@ public class Main {
 		        
 		     
 		        try {
-		            ecoSocket = new Socket("127.0.0.1", 50008);
+		            ecoSocket = new Socket("192.168.1.111", 50008);
 		            salida = new DataOutputStream(ecoSocket.getOutputStream());
 		            entrada = new DataInputStream(ecoSocket.getInputStream());
 
@@ -36,6 +36,7 @@ public class Main {
 		        	try {
 		        		   
 		        		salida.writeBytes("0xVendedor");
+		        		salida.close();
 		        		
 		        	}catch (IOException e) {
 		            System.err.println("E/S fallo en la conexión a: " + "192.168.1.119");
