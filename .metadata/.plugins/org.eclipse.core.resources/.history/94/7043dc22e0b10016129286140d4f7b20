@@ -1,0 +1,20 @@
+package Servidor;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class BancoTabaco {
+	private boolean hayIngredientes;
+	private int ingredientes;
+	private Traza t;
+	
+	BancoTabaco(boolean ingrediente ){
+		
+		hayIngredientes = ingrediente;
+		//Se asigna inicialmente al banco papel y fosforo.
+		ingredientes=0;
+		t= new Traza();
+	}
+
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Traza>
+  <Hecho>
+    <Hora>19:54:05</Hora>
+    <Actor>Fumador(Tabaco)</Actor>
+    <Accion>Recogio papel y fosforo del banco.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>19:54:05</Hora>
+    <Actor>Fumador(Tabaco)</Actor>
+    <Accion>Fuma</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>19:54:10</Hora>
+    <Actor>Fumador(Tabaco)</Actor>
+    <Accion>Dejo de fumar</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>19:54:10</Hora>
+    <Actor>Vendedor</Actor>
+    <Accion>Agrego tabaco y fosforo al banco.</Accion>
+  </Hecho>
+</Traza>

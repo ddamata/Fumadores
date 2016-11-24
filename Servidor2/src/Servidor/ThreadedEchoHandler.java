@@ -42,6 +42,8 @@ public class ThreadedEchoHandler extends Thread{
 		      System.out.println("Servidor - Fumador(Papel) conectado.");
 		      if(Integer.parseInt(accion[0])==2)
 		      System.out.println("Servidor - Fumador(Fosforo) conectado.");
+		      if(Integer.parseInt(accion[0])==3)
+			      System.out.println("Servidor - Vendedor conectado.");
 		    //Bucle infinito que determina la acci�n del usuario dependiendo de su tipo.
 		      while (true) {
 		    	 
