@@ -11,26 +11,46 @@ public class Main {
 	  public static BancoTabaco bancoTabaco;
 	  public static BancoFosforo bancoFosforo;
 	  public static BancoPapel bancoPapel;
-	  private static Random randomN ;//= new Random();
+	
 	  
 	  
 	  
 	  public static void main(String[] args) throws IOException {
-		  randomN = new Random();
-		 for (int i = 0 ; i < 2 ; i++ )
-		 {
-			 int opcion = randomN.nextInt(3);
-			 if (opcion == 1){
-				 bancoTabaco = new BancoTabaco(false);
-				 bancoPapel = new BancoPapel(false);
-				 bancoFosforo = new BancoFosforo(false);
-			 }
+		  Random randomN  = new Random();
+		  System.out.println("Servidor - Servidor principal en funcionamiento.");
 			 
-		 }
+			 switch(randomN.nextInt(3)){
+				case 0:
+					bancoTabaco = new BancoTabaco(false);
+					bancoFosforo = new  BancoFosforo(true);
+					bancoPapel = new BancoPapel(true);
+					  System.out.println("Servidor - Se ha agregado papel y fosforo al banco.");
+					//Se registra el evento en la traza de tipo XML.
+					//t.insertarTraza(Hora.horaActual(), "Fuamdor 0", "ha agarrado Fosforos del banco.");
+				break;
+				case 1:
+					bancoTabaco = new BancoTabaco(true);
+					bancoFosforo = new  BancoFosforo(true);
+					bancoPapel = new BancoPapel(false);
+					System.out.println("Servidor - Se ha agregado tabaco y fosforo al banco.");
+					//Se registra el evento en la traza de tipo XML.
+					//.insertarTraza(Hora.horaActual(), "Fumador 1", "ha agarrado Fosforos del banco.");
+				break;
+				case 2:
+					bancoTabaco = new BancoTabaco(true);
+					bancoFosforo = new  BancoFosforo(false);
+					bancoPapel = new BancoPapel(true);
+					System.out.println("Servidor - Se ha agregado papel y fosforo al Tabaco.");
+					//Se registra el evento en la traza de tipo XML.
+					//t.insertarTraza(Hora.horaActual(), "Fumador", "ha agarrado Fosforos del banco");
+				break;
+			}
+			 
+		 
 		  
 		  int contadorUsuarios=1;
-		  System.out.println("Servidor - Servidor principal en funcionamiento.");
-    	  System.out.println("Servidor - Se ha agregado papel y fosforo al banco.");
+		  
+    	
 		  try {
 	      //Se crea el socket.
 		  ServerSocket s=new ServerSocket(50008);
@@ -40,7 +60,7 @@ public class Main {
 			Socket ss=s.accept();
 			System.out.println("Servidor - Recibiendo conexion numero: "+contadorUsuarios);
 			//Se crea un hilo para manejar al usuario conectado..
-			new ThreadedEchoHandler(ss,contadorUsuarios,banco).start();
+			new ThreadedEchoHandler(ss,contadorUsuarios,bancoTabaco,bancoFosforo,bancoPapel).start();
 			contadorUsuarios++;
 		  }
 		  } catch (Exception e) { System.out.println(e); }

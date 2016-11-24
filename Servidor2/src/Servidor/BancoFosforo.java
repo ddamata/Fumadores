@@ -14,9 +14,10 @@ public class BancoFosforo {
 	
 	public synchronized void nuevosIngredientes () throws  InterruptedException {
 		//Bucle infinito que detiene al vendedor de poner mas ingredientes en el banco si algun fumador est� fumando o el banco ya tiene ingredientes.
-		while(hayIngredientes){
+		/*while(hayIngredientes){
 			wait();
-		}
+		}*/
+		if (!hayIngredientes){
 		//Se agrega fosforos al banco.
 		hayIngredientes = true;
 		//imprimo por pantalla la accion 
@@ -24,12 +25,13 @@ public class BancoFosforo {
 		//Se registra el evento en la traza de tipo XML.
 		t.insertarTraza( Hora.horaActual(), "Vendedor", "Se ha agregado  fosforo al banco.");
 		//Se notifica a todos los fumadores que se han puesto ingredientes nuevos en el banco.
-		notifyAll();
+		notifyAll();}
 	} 
 
-	public synchronized void RecogerIngredientes (int id) throws  InterruptedException {
+	public synchronized boolean RecogerIngredientes (int id) throws  InterruptedException {
 		while (! hayIngredientes ){
-			wait();
+			//wait();
+			return false;
 		}
 		hayIngredientes = false;
 		
@@ -50,6 +52,8 @@ public class BancoFosforo {
 			t.insertarTraza(Hora.horaActual(), "Fumador", "ha agarrado Fosforos del banco");
 		break;
 	}
+		hayIngredientes = false;
+		return true;
 	}
 	
 	

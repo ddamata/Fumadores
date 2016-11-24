@@ -14,13 +14,21 @@ import java.util.ArrayList;
 import java.util.Random;
 /*Realiza el manejo del hilo correspondiente a un usuario, contiene toda la interaccion entre el cliente y el servidor principal*/
 public class ThreadedEchoHandler extends Thread{
-	private Banco banco;
+	//private Banco banco;
+	private BancoTabaco bancoTabaco;
+	 private BancoFosforo bancoFosforo;
+	private BancoPapel bancoPapel;
 	private Random randomN = new Random();
+	private boolean ingredientes[] = {false ,false};
+	private Traza t =new Traza();
 	
-	public ThreadedEchoHandler(Socket i, int c, Banco banco) { 
+	public ThreadedEchoHandler(Socket i, int c, BancoTabaco bancoTabaco, BancoFosforo bancoFosforo, BancoPapel bancoPapel) { 
 		ss=i;
 		counter=c; 
-		this.banco =banco;
+		this.bancoTabaco = bancoTabaco;
+		this.bancoFosforo = bancoFosforo;
+		this.bancoPapel = bancoPapel;
+		
 		}
 	
 	public void run() {
@@ -36,18 +44,152 @@ public class ThreadedEchoHandler extends Thread{
 			  OutputStreamWriter(ss.getOutputStream())),true);
 		    //Se recibe un mensaje y se manipula para determinar el n�mero de usuario y tipo del mismo.
 		      String accion[] = entrada.readLine().split("x");
-		      if(Integer.parseInt(accion[0])==0)
-		      System.out.println("Servidor - Fumador(Tabaco) conectado.");
-		      if(Integer.parseInt(accion[0])==1)
-		      System.out.println("Servidor - Fumador(Papel) conectado.");
-		      if(Integer.parseInt(accion[0])==2)
-		      System.out.println("Servidor - Fumador(Fosforo) conectado.");
-		      if(Integer.parseInt(accion[0])==3)
-			      System.out.println("Servidor - Vendedor conectado.");
-		    //Bucle infinito que determina la acci�n del usuario dependiendo de su tipo.
-		      while (true) {
-		    	 
-		    	
+		      if(Integer.parseInt(accion[0]) == 0){
+				
+					 System.out.println("Servidor - Fumador(Tabaco) conectado.");
+					 //Bucle infinito que determina la acci�n del usuario dependiendo de su tipo.
+				      while (true) {
+				    	 
+					    	if (ingredientes[0] && ingredientes[1] ){
+					    		System.out.println("Servidor - Fumador(Tabaco) Fuamando.");
+					    		Traza.insertarTraza(Hora.horaActual(), "Fuamdor (Tabaco)", "Inicia a fumar.");
+					    		Thread.sleep(5*1000);
+					    		ingredientes[0] = false;
+					    		ingredientes[1] = false;
+					    		System.out.println("Servidor - Fumador(Tabaco) Deja de fuamar.");
+					    		//Se registra el evento en la traza de tipo XML.
+			 		    		Traza.insertarTraza(Hora.horaActual(), "Fuamdor (Tabaco)", "Finaliza de fumar.");
+					    	}else{
+					    		if (!ingredientes[0]){
+					    			ingredientes[0] = bancoFosforo.RecogerIngredientes(Integer.parseInt(accion[0]));;
+					    			if(ingredientes[0]){
+					    				System.out.println("Servidor - Fumador(Tabaco) Agarro fosforos.");
+					    				//Se registra el evento en la traza de tipo XML.
+					    				Traza.insertarTraza(Hora.horaActual(), "Fuamdor (Tabaco)", "Agarro fosforos.");
+					    			}
+					    			
+					    		}
+					    		if (!ingredientes[1]){
+					    			ingredientes[1] = bancoPapel.RecogerIngredientes(Integer.parseInt(accion[0]));
+					    			System.out.println("Servidor - Fumador(Tabaco) Agarro papel.");
+					    			if(ingredientes[1]){
+					    			//Se registra el evento en la traza de tipo XML.
+					    			Traza.insertarTraza(Hora.horaActual(), "Fuamdor (Tabaco)", "Agarro papel.");}
+					    		}
+					    		
+					    	}
+					    	
+				      }
+		      }
+			 if(Integer.parseInt(accion[0]) == 1 && accion[1].equals("Fumador")){
+				
+					System.out.println("Servidor - Fumador(Papel) conectado.");
+					//Bucle infinito que determina la acci�n del usuario dependiendo de su tipo.
+				      while (true) {
+				    	 
+					    	if (ingredientes[0] && ingredientes[1] ){
+					    		System.out.println("Servidor - Fumador(Papel) Fuamando.");
+					    		Traza.insertarTraza(Hora.horaActual(), "Fuamdor (Papel)", "Inicia a fumar.");
+					    		Thread.sleep(5*1000);
+					    		ingredientes[0] = false;
+					    		ingredientes[1] = false;
+					    		System.out.println("Servidor - Fumador(Papel) Deja de fuamar.");
+					    		//Se registra el evento en la traza de tipo XML.
+			 		    		Traza.insertarTraza(Hora.horaActual(), "Fuamdor (Papel)", "Finaliza de fumar.");
+					    	}else{
+					    		if (!ingredientes[0]){
+					    			ingredientes[0] = bancoFosforo.RecogerIngredientes(Integer.parseInt(accion[0]));;
+					    			if(ingredientes[0]){
+					    				System.out.println("Servidor - Fumador(Papel) Agarro fosforos.");
+					    				//Se registra el evento en la traza de tipo XML.
+					    				Traza.insertarTraza(Hora.horaActual(), "Fuamdor (Papel)", "Agarro fosforos.");
+					    			}
+					    			
+					    		}
+					    		if (!ingredientes[1]){
+					    			ingredientes[1] = bancoTabaco.RecogerIngredientes(Integer.parseInt(accion[0]));
+					    			System.out.println("Servidor - Fumador(Papel) Agarro Tabaco.");
+					    			if(ingredientes[1]){
+					    			//Se registra el evento en la traza de tipo XML.
+					    			Traza.insertarTraza(Hora.horaActual(), "Fuamdor (Papel)", "Agarro Tabaco.");}
+					    		}
+					    		
+					    	}
+					    	
+				      }
+			 }
+			if(Integer.parseInt(accion[0]) == 2 && accion[1].equals("Fumador")){
+				
+					System.out.println("Servidor - Fumador(Fosforo) conectado.");
+					//Bucle infinito que determina la acci�n del usuario dependiendo de su tipo.
+				      while (true) {
+				    	 
+					    	if (ingredientes[0] && ingredientes[1] ){
+					    		System.out.println("Servidor - Fumador(Fosforo) Fuamando.");
+					    		Traza.insertarTraza(Hora.horaActual(), "Fuamdor (Fosforo)", "Inicia a fumar.");
+					    		Thread.sleep(5*1000);
+					    		ingredientes[0] = false;
+					    		ingredientes[1] = false;
+					    		System.out.println("Servidor - Fumador(Fosforo) Deja de fuamar.");
+					    		//Se registra el evento en la traza de tipo XML.
+			 		    		Traza.insertarTraza(Hora.horaActual(), "Fuamdor (Fosforo)", "Finaliza de fumar.");
+					    	}else{
+					    		if (!ingredientes[0]){
+					    			ingredientes[0] = bancoTabaco.RecogerIngredientes(Integer.parseInt(accion[0]));;
+					    			if(ingredientes[0]){
+					    				System.out.println("Servidor - Fumador(Fosforo) Agarro tabaco.");
+					    				//Se registra el evento en la traza de tipo XML.
+					    				Traza.insertarTraza(Hora.horaActual(), "Fuamdor (Fosforo)", "Agarro tabaco.");
+					    			}
+					    			
+					    		}
+					    		if (!ingredientes[1]){
+					    			ingredientes[1] = bancoPapel.RecogerIngredientes(Integer.parseInt(accion[0]));
+					    			System.out.println("Servidor - Fumador(Fosforo) Agarro papel.");
+					    			if(ingredientes[1]){
+					    			//Se registra el evento en la traza de tipo XML.
+					    			Traza.insertarTraza(Hora.horaActual(), "Fuamdor (Fosforo)", "Agarro papel.");}
+					    		}
+					    		
+					    	}
+					    	
+				      }
+			 }
+			if(Integer.parseInt(accion[0]) == 3 && accion[1].equals("Vendedor")){
+				
+					System.out.println("Servidor - Vendedor conectado.");
+					while (true){
+					for (int i=0 ;i < 2; i++){
+						
+						int control = randomN.nextInt(3);
+						switch ( control ){
+							case 0:
+								bancoTabaco.nuevosIngredientes();
+								break;
+							case 1:
+								bancoPapel.nuevosIngredientes();
+								break;
+							case 2: 
+								bancoFosforo.nuevosIngredientes();
+								break;
+							
+						}
+						
+					}
+					Thread.sleep(5*1000);
+					}
+					
+			 }
+			
+		      
+		 
+		   
+		    	  
+		    	  
+		    	  
+		    	  
+		    	/*  while(true){
+		    	  
 		    	  if (accion[1].equals("Fumador")){
 		    		  	//Se indica que el fumador intentar� fumar, enviando su id de fumador.
 						banco.fumar(Integer.parseInt(accion[0]));
@@ -67,7 +209,7 @@ public class ThreadedEchoHandler extends Thread{
 		    		  banco.nuevosIngredientes(ingrediente);
 		    	  }
 	      
-		      }
+		      }*/
 	    } catch (IOException e) {
 	      System.out.println("IOException: " + e.getMessage());
 	    } catch (InterruptedException e) {

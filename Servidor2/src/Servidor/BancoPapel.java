@@ -14,9 +14,10 @@ public class BancoPapel {
 	
 	public synchronized void nuevosIngredientes () throws  InterruptedException {
 		//Bucle infinito que detiene al vendedor de poner mas ingredientes en el banco si algun fumador est� fumando o el banco ya tiene ingredientes.
-		while(hayIngredientes){
+		/*while(hayIngredientes){
 			wait();
-		}
+		}*/
+		if (!hayIngredientes){
 		//Se agrega Papel al banco.
 		hayIngredientes = true;
 		//imprimo por pantalla la accion 
@@ -25,11 +26,13 @@ public class BancoPapel {
 		t.insertarTraza( Hora.horaActual(), "Vendedor", "Se ha agregado  Papel al banco.");
 		//Se notifica a todos los fumadores que se han puesto ingredientes nuevos en el banco.
 		notifyAll();
+		}
 	} 
 
-	public synchronized void RecogerIngredientes (int id) throws  InterruptedException {
+	public synchronized boolean RecogerIngredientes (int id) throws  InterruptedException {
 		while (! hayIngredientes ){
-			wait();
+			//wait();
+			return false;
 		}
 		hayIngredientes = false;
 		
@@ -50,6 +53,8 @@ public class BancoPapel {
 			t.insertarTraza(Hora.horaActual(), "Fumador", "ha agarrado Papel del banco");
 		break;
 	}
+		hayIngredientes = false;
+		return true;
 	}
 }
 
