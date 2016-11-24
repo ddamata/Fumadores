@@ -1,4 +1,4 @@
-package fumadorpapel;
+package fumadortabaco;
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.DataInputStream;
@@ -38,9 +38,8 @@ public class Main {
         
         if (ecoSocket != null && salida != null && entrada != null) {
         	try {
-        		   
         		//Se envia al servidor el id de usuario junto con el tipo de usuario separado por una X.
-        		salida.writeBytes("1xFumador");
+        		salida.writeBytes("0xFumador");
         		salida.close();
         		
         	}catch (IOException e) {

@@ -6,6 +6,5 @@ INDEX VERSION 1.127+/Users/Daniel/GitHub/Fumadores/.metadata/.plugins/org.eclips
 2062807316.index
 7707009.index
 2662825752.index
-2977730753.index
 3699428115.index
 1169609881.index
