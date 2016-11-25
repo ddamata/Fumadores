@@ -2,23 +2,33 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="265" key="DIALOG_WIDTH"/>
-		<item value="107" key="DIALOG_Y_ORIGIN"/>
+		<item value="193" key="DIALOG_Y_ORIGIN"/>
+		<item value="1115" key="DIALOG_X_ORIGIN"/>
 		<item value="399" key="DIALOG_HEIGHT"/>
-		<item value="995" key="DIALOG_X_ORIGIN"/>
 		<item value="1|.SF NS Text|11.0|0|COCOA|1|.SFNSText" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
-		<item value="false" key="isRegEx"/>
 		<item value="false" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="Papel" key="selection"/>
+		<item value="salida.println" key="selection"/>
 		<list key="findhistory">
-			<item value="fosforos"/>
-			<item value="Fosforos"/>
+			<item value="salida.writeBytes"/>
+			<item value="Salida.writeBytes"/>
+			<item value="Salida.write"/>
+			<item value="write"/>
+			<item value="wait"/>
+			<item value="wai"/>
+			<item value="wait();"/>
+			<item value="whait"/>
 		</list>
 		<list key="replacehistory">
+			<item value="salida.println"/>
+			<item value="salida.writeBytes"/>
+			<item value="Salida.writeBytes"/>
+			<item value="writeBytes"/>
 			<item value="Papel"/>
 			<item value="Tabaco"/>
 		</list>

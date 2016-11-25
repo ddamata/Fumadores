@@ -7,13 +7,10 @@ import java.util.Random;
 
 public class Main {  
 	  //Se crea el banco.
-	  public static Banco banco = new Banco();
 	  public static BancoTabaco bancoTabaco;
 	  public static BancoFosforo bancoFosforo;
 	  public static BancoPapel bancoPapel;
 	
-	  
-	  
 	  
 	  public static void main(String[] args) throws IOException {
 		  Random randomN  = new Random();
@@ -21,26 +18,26 @@ public class Main {
 			 
 			 switch(randomN.nextInt(3)){
 				case 0:
-					bancoTabaco = new BancoTabaco(false);
-					bancoFosforo = new  BancoFosforo(true);
-					bancoPapel = new BancoPapel(true);
+					bancoTabaco = new BancoTabaco(Boolean.FALSE);
+					bancoFosforo = new  BancoFosforo(Boolean.TRUE);
+					bancoPapel = new BancoPapel(Boolean.TRUE);
 					  System.out.println("Servidor - Se ha agregado papel y fosforo al banco.");
 					//Se registra el evento en la traza de tipo XML.
 					//t.insertarTraza(Hora.horaActual(), "Fuamdor 0", "ha agarrado Fosforos del banco.");
 				break;
 				case 1:
-					bancoTabaco = new BancoTabaco(true);
-					bancoFosforo = new  BancoFosforo(true);
-					bancoPapel = new BancoPapel(false);
+					bancoTabaco = new BancoTabaco(Boolean.TRUE);
+					bancoFosforo = new  BancoFosforo(Boolean.TRUE);
+					bancoPapel = new BancoPapel(Boolean.FALSE);
 					System.out.println("Servidor - Se ha agregado tabaco y fosforo al banco.");
 					//Se registra el evento en la traza de tipo XML.
 					//.insertarTraza(Hora.horaActual(), "Fumador 1", "ha agarrado Fosforos del banco.");
 				break;
 				case 2:
-					bancoTabaco = new BancoTabaco(true);
-					bancoFosforo = new  BancoFosforo(false);
-					bancoPapel = new BancoPapel(true);
-					System.out.println("Servidor - Se ha agregado papel y fosforo al Tabaco.");
+					bancoTabaco = new BancoTabaco(Boolean.TRUE);
+					bancoFosforo = new  BancoFosforo(Boolean.FALSE);
+					bancoPapel = new BancoPapel(Boolean.TRUE);
+					System.out.println("Servidor - Se ha agregado papel y tabaco al banco.");
 					//Se registra el evento en la traza de tipo XML.
 					//t.insertarTraza(Hora.horaActual(), "Fumador", "ha agarrado Fosforos del banco");
 				break;

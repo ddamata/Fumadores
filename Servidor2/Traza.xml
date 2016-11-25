@@ -1,419 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Traza>
   <Hecho>
-    <Hora>19:54:05</Hora>
-    <Actor>Fumador(Tabaco)</Actor>
-    <Accion>Recogio papel y fosforo del banco.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>19:54:05</Hora>
-    <Actor>Fumador(Tabaco)</Actor>
-    <Accion>Fuma</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>19:54:10</Hora>
-    <Actor>Fumador(Tabaco)</Actor>
-    <Accion>Dejo de fumar</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>19:54:10</Hora>
-    <Actor>Vendedor</Actor>
-    <Accion>Agrego tabaco y fosforo al banco.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>22:50:12</Hora>
-    <Actor>Fuamdor 0</Actor>
-    <Accion>ha agarrado Fosforos del banco.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>22:50:12</Hora>
-    <Actor>Fuamdor (Tabaco)</Actor>
-    <Accion>Agarro fosforos.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>22:50:12</Hora>
-    <Actor>Fuamdor 0</Actor>
-    <Accion>ha agarrado papel del banco.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>22:50:12</Hora>
-    <Actor>Fuamdor (Tabaco)</Actor>
-    <Accion>Agarro papel.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>22:50:12</Hora>
-    <Actor>Fuamdor (Tabaco)</Actor>
-    <Accion>Inicia a fumar.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>22:50:17</Hora>
-    <Actor>Fuamdor (Tabaco)</Actor>
-    <Accion>Finaliza de fumar.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>22:51:37</Hora>
-    <Actor>Vendedor</Actor>
-    <Accion>Se ha agregado  fosforo al banco.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>22:51:37</Hora>
-    <Actor>Fuamdor 0</Actor>
-    <Accion>ha agarrado Fosforos del banco.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>22:51:37</Hora>
-    <Actor>Fuamdor (Tabaco)</Actor>
-    <Accion>Agarro fosforos.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>22:51:42</Hora>
-    <Actor>Vendedor</Actor>
-    <Accion>Se ha agregado  fosforo al banco.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>22:55:54</Hora>
+    <Hora>13:02:02</Hora>
     <Actor>Vendedor</Actor>
     <Accion>Se ha agregado  Papel al banco.</Accion>
   </Hecho>
   <Hecho>
-    <Hora>22:56:06</Hora>
-    <Actor>Fuamdor 0</Actor>
-    <Accion>ha agarrado Fosforos del banco.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>22:56:06</Hora>
-    <Actor>Fuamdor (Tabaco)</Actor>
-    <Accion>Agarro fosforos.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>22:56:06</Hora>
-    <Actor>Fuamdor 0</Actor>
-    <Accion>ha agarrado papel del banco.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>22:56:06</Hora>
-    <Actor>Fuamdor (Tabaco)</Actor>
-    <Accion>Agarro papel.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>22:56:06</Hora>
-    <Actor>Fuamdor (Tabaco)</Actor>
-    <Accion>Inicia a fumar.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>22:56:11</Hora>
-    <Actor>Fuamdor (Tabaco)</Actor>
-    <Accion>Finaliza de fumar.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>22:56:59</Hora>
-    <Actor>Vendedor</Actor>
-    <Accion>Se ha agregado  fosforo al banco.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>22:57:04</Hora>
-    <Actor>Fuamdor 0</Actor>
-    <Accion>ha agarrado Fosforos del banco.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>22:57:04</Hora>
-    <Actor>Fuamdor (Tabaco)</Actor>
-    <Accion>Agarro fosforos.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>22:57:04</Hora>
-    <Actor>Fuamdor 0</Actor>
-    <Accion>ha agarrado papel del banco.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>22:57:04</Hora>
-    <Actor>Fuamdor (Tabaco)</Actor>
-    <Accion>Agarro papel.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>22:57:04</Hora>
-    <Actor>Fuamdor (Tabaco)</Actor>
-    <Accion>Inicia a fumar.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>22:57:09</Hora>
-    <Actor>Fuamdor (Tabaco)</Actor>
-    <Accion>Finaliza de fumar.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>22:57:13</Hora>
+    <Hora>13:02:38</Hora>
     <Actor>Fumador</Actor>
     <Accion>ha agarrado Tabaco del banco</Accion>
   </Hecho>
   <Hecho>
-    <Hora>22:57:13</Hora>
+    <Hora>13:02:38</Hora>
     <Actor>Fuamdor (Fosforo)</Actor>
     <Accion>Agarro tabaco.</Accion>
   </Hecho>
   <Hecho>
-    <Hora>23:00:04</Hora>
-    <Actor>Fumador</Actor>
-    <Accion>ha agarrado Tabaco del banco</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>23:00:04</Hora>
-    <Actor>Fuamdor (Fosforo)</Actor>
-    <Accion>Agarro tabaco.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>23:00:04</Hora>
+    <Hora>13:02:38</Hora>
     <Actor>Fumador</Actor>
     <Accion>ha agarrado Papel del banco</Accion>
   </Hecho>
   <Hecho>
-    <Hora>23:00:04</Hora>
+    <Hora>13:02:38</Hora>
     <Actor>Fuamdor (Fosforo)</Actor>
     <Accion>Agarro papel.</Accion>
   </Hecho>
   <Hecho>
-    <Hora>23:00:04</Hora>
+    <Hora>13:02:38</Hora>
     <Actor>Fuamdor (Fosforo)</Actor>
     <Accion>Inicia a fumar.</Accion>
   </Hecho>
   <Hecho>
-    <Hora>23:00:09</Hora>
+    <Hora>13:02:43</Hora>
     <Actor>Fuamdor (Fosforo)</Actor>
     <Accion>Finaliza de fumar.</Accion>
   </Hecho>
   <Hecho>
-    <Hora>23:00:46</Hora>
-    <Actor>Fumador 1</Actor>
-    <Accion>ha agarrado Fosforos del banco.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>23:00:46</Hora>
-    <Actor>Fuamdor (Papel)</Actor>
-    <Accion>Agarro fosforos.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>23:00:46</Hora>
-    <Actor>Fumador 1</Actor>
-    <Accion>ha agarrado Tabaco del banco.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>23:00:46</Hora>
-    <Actor>Fuamdor (Papel)</Actor>
-    <Accion>Agarro Tabaco.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>23:00:46</Hora>
-    <Actor>Fuamdor (Papel)</Actor>
-    <Accion>Inicia a fumar.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>23:00:52</Hora>
-    <Actor>Fuamdor (Papel)</Actor>
-    <Accion>Finaliza de fumar.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>23:01:13</Hora>
-    <Actor>Vendedor</Actor>
-    <Accion>Se ha agregado  Tabaco al banco.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>23:01:13</Hora>
+    <Hora>13:02:47</Hora>
     <Actor>Vendedor</Actor>
     <Accion>Se ha agregado  Papel al banco.</Accion>
   </Hecho>
   <Hecho>
-    <Hora>23:05:48</Hora>
-    <Actor>Vendedor</Actor>
-    <Accion>Se ha agregado  fosforo al banco.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>23:06:08</Hora>
-    <Actor>Fumador 1</Actor>
-    <Accion>ha agarrado Fosforos del banco.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>23:06:08</Hora>
-    <Actor>Fuamdor (Papel)</Actor>
-    <Accion>Agarro fosforos.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>23:06:08</Hora>
-    <Actor>Fumador 1</Actor>
-    <Accion>ha agarrado Tabaco del banco.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>23:06:08</Hora>
-    <Actor>Fuamdor (Papel)</Actor>
-    <Accion>Agarro Tabaco.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>23:06:08</Hora>
-    <Actor>Fuamdor (Papel)</Actor>
-    <Accion>Inicia a fumar.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>23:06:13</Hora>
-    <Actor>Vendedor</Actor>
-    <Accion>Se ha agregado  Tabaco al banco.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>23:06:14</Hora>
-    <Actor>Fuamdor (Papel)</Actor>
-    <Accion>Finaliza de fumar.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>23:06:18</Hora>
-    <Actor>Vendedor</Actor>
-    <Accion>Se ha agregado  fosforo al banco.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>23:06:18</Hora>
-    <Actor>Fumador 1</Actor>
-    <Accion>ha agarrado Tabaco del banco.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>23:06:18</Hora>
-    <Actor>Fuamdor (Papel)</Actor>
-    <Accion>Agarro Tabaco.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>23:06:18</Hora>
-    <Actor>Fumador 1</Actor>
-    <Accion>ha agarrado Fosforos del banco.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>23:06:18</Hora>
-    <Actor>Fuamdor (Papel)</Actor>
-    <Accion>Agarro fosforos.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>23:06:18</Hora>
-    <Actor>Fuamdor (Papel)</Actor>
-    <Accion>Inicia a fumar.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>23:06:23</Hora>
-    <Actor>Vendedor</Actor>
-    <Accion>Se ha agregado  Tabaco al banco.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>23:06:23</Hora>
-    <Actor>Fuamdor (Papel)</Actor>
-    <Accion>Finaliza de fumar.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>23:06:28</Hora>
-    <Actor>Vendedor</Actor>
-    <Accion>Se ha agregado  fosforo al banco.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>23:06:28</Hora>
-    <Actor>Fumador 1</Actor>
-    <Accion>ha agarrado Tabaco del banco.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>23:06:28</Hora>
-    <Actor>Fuamdor (Papel)</Actor>
-    <Accion>Agarro Tabaco.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>23:06:28</Hora>
-    <Actor>Fumador 1</Actor>
-    <Accion>ha agarrado Fosforos del banco.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>23:06:28</Hora>
-    <Actor>Fuamdor (Papel)</Actor>
-    <Accion>Agarro fosforos.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>23:06:28</Hora>
-    <Actor>Fuamdor (Papel)</Actor>
-    <Accion>Inicia a fumar.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>23:06:33</Hora>
-    <Actor>Vendedor</Actor>
-    <Accion>Se ha agregado  Tabaco al banco.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>23:08:10</Hora>
-    <Actor>Vendedor</Actor>
-    <Accion>Se ha agregado  Tabaco al banco.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>23:08:43</Hora>
-    <Actor>Fuamdor 0</Actor>
-    <Accion>ha agarrado Fosforos del banco.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>23:08:43</Hora>
-    <Actor>Fuamdor (Tabaco)</Actor>
-    <Accion>Agarro fosforos.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>23:08:43</Hora>
-    <Actor>Fuamdor 0</Actor>
-    <Accion>ha agarrado papel del banco.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>23:08:43</Hora>
-    <Actor>Fuamdor (Tabaco)</Actor>
-    <Accion>Agarro papel.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>23:08:43</Hora>
-    <Actor>Fuamdor (Tabaco)</Actor>
-    <Accion>Inicia a fumar.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>23:08:45</Hora>
-    <Actor>Vendedor</Actor>
-    <Accion>Se ha agregado  Papel al banco.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>23:08:48</Hora>
-    <Actor>Fuamdor (Tabaco)</Actor>
-    <Accion>Finaliza de fumar.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>23:08:49</Hora>
-    <Actor>Fumador</Actor>
-    <Accion>ha agarrado Tabaco del banco</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>23:08:49</Hora>
-    <Actor>Fuamdor (Fosforo)</Actor>
-    <Accion>Agarro tabaco.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>23:08:49</Hora>
+    <Hora>13:02:47</Hora>
     <Actor>Fumador</Actor>
     <Accion>ha agarrado Papel del banco</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>23:08:49</Hora>
-    <Actor>Fuamdor (Fosforo)</Actor>
-    <Accion>Agarro papel.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>23:08:49</Hora>
-    <Actor>Fuamdor (Fosforo)</Actor>
-    <Accion>Inicia a fumar.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>23:08:50</Hora>
-    <Actor>Vendedor</Actor>
-    <Accion>Se ha agregado  Papel al banco.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>23:08:50</Hora>
-    <Actor>Vendedor</Actor>
-    <Accion>Se ha agregado  fosforo al banco.</Accion>
-  </Hecho>
-  <Hecho>
-    <Hora>23:08:50</Hora>
-    <Actor>Fuamdor 0</Actor>
-    <Accion>ha agarrado papel del banco.</Accion>
   </Hecho>
 </Traza>
->
+aza>

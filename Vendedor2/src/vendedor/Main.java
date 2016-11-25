@@ -19,7 +19,7 @@ public class Main {
 		     
 		        try {
 		        	//Se crea el socket con la direcci�n IP y puerto del servidor.
-		            ecoSocket = new Socket("192.168.0.105", 50008);
+		            ecoSocket = new Socket("127.0.0.1", 50008);
 		          //Se crean los canales de entrada y salida del socket.
 		            salida = new DataOutputStream(ecoSocket.getOutputStream());
 		            entrada = new DataInputStream(ecoSocket.getInputStream());

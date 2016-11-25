@@ -21,7 +21,7 @@ public class Main {
        
         try {
         	//Se crea el socket con la direcci�n IP y puerto del servidor.
-            ecoSocket = new Socket("192.168.0.105", 50008);
+            ecoSocket = new Socket("127.0.0.1", 50008);
           //Se crean los canales de entrada y salida del socket.
             salida = new DataOutputStream(ecoSocket.getOutputStream());
             entrada = new DataInputStream(ecoSocket.getInputStream());
@@ -40,7 +40,11 @@ public class Main {
         	try {
         		//Se envia al servidor el id de usuario junto con el tipo de usuario separado por una X.
         		salida.writeBytes("0xFumador");
-        		salida.close();
+        		while (true){
+        			if (entrada != null){
+        			System.out.println(entrada.readLine());}
+        		}
+        		//salida.close();
         		
         	}catch (IOException e) {
             System.err.println("E/S fallo en la conexion a: " + "192.168.1.119");
