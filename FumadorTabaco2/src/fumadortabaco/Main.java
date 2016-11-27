@@ -47,10 +47,11 @@ public class Main {
 			salida.println("0xFumador");
 			try {
 				while(true){
-					if(entrada.readLine()!=null)
-						System.out.println(entrada.readLine());
+					if(entrada.readLine()!=null){
+						//System.out.println(entrada.readLine());
 						String mensaje[]= entrada.readLine().split("-");
 						traza.insertarTraza(mensaje[0], mensaje[1], mensaje[2]);
+					}
 				}
 			} catch (IOException e) {
 				// TODO Auto-generated catch block

@@ -50,10 +50,11 @@ public class Main {
         		//Se envia al servidor el id de usuario junto con el tipo de usuario separado por una X.
         		salida.println("2xFumador");
 				while(true){
-					if(entrada.readLine()!=null)
-						System.out.println(entrada.readLine());
+					if(entrada.readLine()!=null){
+						//System.out.println(entrada.readLine());
 						String mensaje[]= entrada.readLine().split("-");
 						traza.insertarTraza(mensaje[0], mensaje[1], mensaje[2]);
+					}
 				}	
         	}catch (IOException e) {
         		System.err.println("E/S fallo en la conexion a: " + "192.168.1.119");
