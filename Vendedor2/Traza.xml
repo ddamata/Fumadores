@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Traza>
+  <Hecho>
+    <Hora>16:11:58</Hora>
+    <Actor>Vendedor</Actor>
+    <Accion>Coloca tabaco en el banco.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:12:01</Hora>
+    <Actor>Vendedor</Actor>
+    <Accion>Coloca tabaco en el banco.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:12:07</Hora>
+    <Actor>Vendedor</Actor>
+    <Accion>Coloca tabaco en el banco.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:12:10</Hora>
+    <Actor>Vendedor</Actor>
+    <Accion>Coloca papel en el banco.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:12:16</Hora>
+    <Actor>Vendedor</Actor>
+    <Accion>Coloca fosforo en el banco.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:12:19</Hora>
+    <Actor>Vendedor</Actor>
+    <Accion>Coloca papel en el banco.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:12:25</Hora>
+    <Actor>Vendedor</Actor>
+    <Accion>Coloca papel en el banco.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:12:28</Hora>
+    <Actor>Vendedor</Actor>
+    <Accion>Coloca tabaco en el banco.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:12:34</Hora>
+    <Actor>Vendedor</Actor>
+    <Accion>Coloca tabaco en el banco.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:12:37</Hora>
+    <Actor>Vendedor</Actor>
+    <Accion>Coloca fosforo en el banco.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:12:43</Hora>
+    <Actor>Vendedor</Actor>
+    <Accion>Coloca fosforo en el banco.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:12:46</Hora>
+    <Actor>Vendedor</Actor>
+    <Accion>Coloca fosforo en el banco.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:18:33</Hora>
+    <Actor>Vendedor</Actor>
+    <Accion>Coloca tabaco en el banco.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:18:36</Hora>
+    <Actor>Vendedor</Actor>
+    <Accion>Coloca tabaco en el banco.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:18:42</Hora>
+    <Actor>Vendedor</Actor>
+    <Accion>Coloca papel en el banco.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:18:45</Hora>
+    <Actor>Vendedor</Actor>
+    <Accion>Coloca tabaco en el banco.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:18:51</Hora>
+    <Actor>Vendedor</Actor>
+    <Accion>Coloca papel en el banco.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:18:54</Hora>
+    <Actor>Vendedor</Actor>
+    <Accion>Coloca papel en el banco.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:19:00</Hora>
+    <Actor>Vendedor</Actor>
+    <Accion>Coloca fosforo en el banco.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:19:03</Hora>
+    <Actor>Vendedor</Actor>
+    <Accion>Coloca papel en el banco.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:19:09</Hora>
+    <Actor>Vendedor</Actor>
+    <Accion>Coloca papel en el banco.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:19:12</Hora>
+    <Actor>Vendedor</Actor>
+    <Accion>Coloca papel en el banco.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:19:18</Hora>
+    <Actor>Vendedor</Actor>
+    <Accion>Coloca fosforo en el banco.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:19:21</Hora>
+    <Actor>Vendedor</Actor>
+    <Accion>Coloca papel en el banco.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:19:27</Hora>
+    <Actor>Vendedor</Actor>
+    <Accion>Coloca tabaco en el banco.</Accion>
+  </Hecho>
+</Traza>

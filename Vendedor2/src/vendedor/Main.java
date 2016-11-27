@@ -1,8 +1,13 @@
 package vendedor;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
@@ -12,17 +17,17 @@ public class Main {
 	
 		// TODO Auto-generated method stub
 				Socket ecoSocket = null;
-		        DataOutputStream salida = null;
-		        DataInputStream entrada = null;
-		        DataInputStream stdIn = new DataInputStream(System.in);    
+			    BufferedReader entrada = null;
+			    PrintWriter salida = null;
+			    Traza traza= new Traza();
 		        
 		     
 		        try {
 		        	//Se crea el socket con la direcci�n IP y puerto del servidor.
 		            ecoSocket = new Socket("127.0.0.1", 50008);
 		          //Se crean los canales de entrada y salida del socket.
-		            salida = new DataOutputStream(ecoSocket.getOutputStream());
-		            entrada = new DataInputStream(ecoSocket.getInputStream());
+		            entrada = new BufferedReader(new InputStreamReader(ecoSocket.getInputStream()));
+		            salida = new PrintWriter(new BufferedWriter(new OutputStreamWriter(ecoSocket.getOutputStream())),true);
 
 		            
 		           
@@ -37,14 +42,19 @@ public class Main {
 		        if (ecoSocket != null && salida != null && entrada != null) {
 		        	try {
 		        		//Se envia al servidor el id de usuario junto con el tipo de usuario separado por una X.
-		        		salida.writeBytes("3xVendedor");
-		        		salida.close();
-		        		
+		        		salida.println("3xVendedor");	
+						while(true){
+							if(entrada.readLine()!=null){
+								System.out.println(entrada.readLine());
+								String mensaje[]= entrada.readLine().split("-");
+								traza.insertarTraza(mensaje[0], mensaje[1], mensaje[2]);
+							}
+						}
 		        	}catch (IOException e) {
-		            System.err.println("E/S fallo en la conexión a: " + "192.168.1.119");
-		            System.err.println("" + e.getMessage());
-		            
+			            System.err.println("E/S fallo en la conexion a: " + "192.168.1.119");
+			            System.err.println("" + e.getMessage());      
 		        	}
+		        	salida.close();
 		        }
 
 	}	

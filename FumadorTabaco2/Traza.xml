@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Traza>
+  <Hecho>
+    <Hora>16:07:04</Hora>
+    <Actor>Fumador(Tabaco)</Actor>
+    <Accion>Comienza a fumar.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:07:20</Hora>
+    <Actor>Fumador(Tabaco)</Actor>
+    <Accion>Agarro fosforo del banco.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:07:25</Hora>
+    <Actor>Fumador(Tabaco)</Actor>
+    <Accion>Agarro papel del banco.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:07:52</Hora>
+    <Actor>Fumador(Tabaco)</Actor>
+    <Accion>Termina de fumar.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:07:56</Hora>
+    <Actor>Fumador(Tabaco)</Actor>
+    <Accion>Comienza a fumar.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:12:02</Hora>
+    <Actor>Fumador(Tabaco)</Actor>
+    <Accion>Comienza a fumar.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:12:22</Hora>
+    <Actor>Fumador(Tabaco)</Actor>
+    <Accion>Agarro fosforo del banco.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:12:27</Hora>
+    <Actor>Fumador(Tabaco)</Actor>
+    <Accion>Agarro papel del banco.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:12:36</Hora>
+    <Actor>Fumador(Tabaco)</Actor>
+    <Accion>Termina de fumar.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:12:40</Hora>
+    <Actor>Fumador(Tabaco)</Actor>
+    <Accion>Comienza a fumar.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:13:01</Hora>
+    <Actor>Fumador(Tabaco)</Actor>
+    <Accion>Agarro papel del banco.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:13:06</Hora>
+    <Actor>Fumador(Tabaco)</Actor>
+    <Accion>Agarro papel del banco.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:13:27</Hora>
+    <Actor>Fumador(Tabaco)</Actor>
+    <Accion>Termina de fumar.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:13:27</Hora>
+    <Actor>Fumador(Tabaco)</Actor>
+    <Accion>Comienza a fumar.</Accion>
+  </Hecho>
+  <Hecho>
+    <Hora>16:18:33</Hora>
+    <Actor>Fumador(Tabaco)</Actor>
+    <Accion>Comienza a fumar.</Accion>
+  </Hecho>
+</Traza>

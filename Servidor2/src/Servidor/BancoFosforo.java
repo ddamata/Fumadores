@@ -33,19 +33,19 @@ public class BancoFosforo {
 		
 		switch(id){
 		case 0:
-			System.out.println("Fumador(Tabaco) -  ha agarrado fosforo del banco.");
+			System.out.println("Fumador(Tabaco) -  Agarro fosforo del banco.");
 			//Se registra el evento en la traza de tipo XML.
-			Traza.insertarTraza(Hora.horaActual(), "Fumador 0", "Agarro fosforo del banco.");
+			Traza.insertarTraza(Hora.horaActual(), "Fumador(Tabaco)", "Agarro fosforo del banco.");
 		break;
 		case 1:
-			System.out.println("Fumador(Papel) - ha agarrado fosforo del banco.");
+			System.out.println("Fumador(Papel) - Agarro fosforo del banco.");
 			//Se registra el evento en la traza de tipo XML.
-			Traza.insertarTraza(Hora.horaActual(), "Fumador 1", "Agarro fosforo del banco.");
+			Traza.insertarTraza(Hora.horaActual(), "Fumador(Papel)", "Agarro fosforo del banco.");
 		break;
 		case 2:
-			System.out.println("Fumador(Fosforo) - ha agarrado fosforo del banco.");
+			System.out.println("Fumador(Fosforo) - Agarro fosforo del banco.");
 			//Se registra el evento en la traza de tipo XML.
-			Traza.insertarTraza(Hora.horaActual(), "Fumador 2", "Agarro fosforos del banco");
+			Traza.insertarTraza(Hora.horaActual(), "Fumador(Fosforo)", "Agarro fosforo del banco");
 		break;
 	}
 		hayIngredientes = Boolean.FALSE;

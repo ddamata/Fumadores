@@ -34,19 +34,19 @@ public class BancoPapel {
 		
 		switch(id){
 		case 0:
-			System.out.println("Fumador(Tabaco) -  ha agarrado papel del banco.");
+			System.out.println("Fumador(Tabaco) -  Agarro papel del banco.");
 			//Se registra el evento en la traza de tipo XML.
-			Traza.insertarTraza(Hora.horaActual(), "Fumador 0", "Agarro papel del banco.");
+			Traza.insertarTraza(Hora.horaActual(), "Fumador(Tabaco)", "Agarro papel del banco.");
 		break;
 		case 1:
-			System.out.println("Fumador(Papel) - ha agarrado papel del banco.");
+			System.out.println("Fumador(Papel) - Agarro papel del banco.");
 			//Se registra el evento en la traza de tipo XML.
-			Traza.insertarTraza(Hora.horaActual(), "Fumador 1", "Agarro papel del banco.");
+			Traza.insertarTraza(Hora.horaActual(), "Fumador(Papel)", "Agarro papel del banco.");
 		break;
 		case 2:
-			System.out.println("Fumador(Fosforo) - ha agarrado papel del banco.");
+			System.out.println("Fumador(Fosforo) - Agarro papel del banco.");
 			//Se registra el evento en la traza de tipo XML.
-			Traza.insertarTraza(Hora.horaActual(), "Fumador 2", "Agarro papel del banco");
+			Traza.insertarTraza(Hora.horaActual(), "Fumador(Fosforo)", "Agarro papel del banco");
 		break;
 	}
 		hayIngredientes = Boolean.FALSE;

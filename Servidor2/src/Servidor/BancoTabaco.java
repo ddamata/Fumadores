@@ -33,21 +33,21 @@ public class BancoTabaco {
 		
 		switch(id){
 		case 0:
-			System.out.println("Fumador(Tabaco) -  ha agarrado tabaco del banco.");
+			System.out.println("Fumador(Tabaco) -  Agarro tabaco del banco.");
 			//Se registra el evento en la traza de tipo XML.
-			Traza.insertarTraza(Hora.horaActual(), "Fumador 0", "Agarro tabaco del banco.");
+			Traza.insertarTraza(Hora.horaActual(), "Fumador(Tabaco)", "Agarro tabaco del banco.");
 			
 		break;
 		case 1:
-			System.out.println("Fumador(Papel) - ha agarrado tabaco del banco.");
+			System.out.println("Fumador(Papel) - Agarro tabaco del banco.");
 			//Se registra el evento en la traza de tipo XML.
-			Traza.insertarTraza(Hora.horaActual(), "Fumador 1", "Agarro tabaco del banco.");
+			Traza.insertarTraza(Hora.horaActual(), "Fumador(Papel)", "Agarro tabaco del banco.");
 			
 		break;
 		case 2:
-			System.out.println("Fumador(Fosforo) - ha agarrado tabaco del banco.");
+			System.out.println("Fumador(Fosforo) - Agarro tabaco del banco.");
 			//Se registra el evento en la traza de tipo XML.
-			Traza.insertarTraza(Hora.horaActual(), "Fumador 2", "Agarro tabaco del banco");
+			Traza.insertarTraza(Hora.horaActual(), "Fumador(Fosforo)", "Agarro tabaco del banco");
 			
 		break;
 		
