@@ -123,9 +123,8 @@ public class ThreadedEchoHandler extends Thread{
 				    	 
 					    	if (ingredientes[0] && ingredientes[1] ){
 					    		System.out.println("Fumador(Fosforo) - Comienza a fumar.");
-					    		salida.println(Hora.horaActual()+"xFumador (Fosforo)x Fumando.");
-					    		Traza.insertarTraza(Hora.horaActual(), "Fumador(Fosforo)", "Comienza a fumar.");
 					    		salida.println(Hora.horaActual()+"-Fumador(Fosforo)-Comienza a fumar.");
+					    		Traza.insertarTraza(Hora.horaActual(), "Fumador(Fosforo)", "Comienza a fumar.");
 					    		Thread.sleep(5*1000);
 					    		ingredientes[0] = false;
 					    		ingredientes[1] = false;

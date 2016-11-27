@@ -18,8 +18,10 @@ public class BancoTabaco {
 		//Se agrega Tabaco al banco.
 		hayIngredientes = Boolean.TRUE;
 		//imprimo por pantalla la accion 
-		System.out.println("Vendedor - Se ha agregado tabaco al banco.");
+		System.out.println("Vendedor - Agrego tabaco al banco.");
 		//Se registra el evento en la traza de tipo XML.
+		Traza.insertarTraza( Hora.horaActual(), "Vendedor", "Agrego tabaco al banco.");
+		//Se notifica a todos los fumadores que se han puesto ingredientes nuevos en el banco.
 		
 		}
 		

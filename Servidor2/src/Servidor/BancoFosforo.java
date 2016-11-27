@@ -18,9 +18,9 @@ public class BancoFosforo {
 		//Se agrega fosforos al banco.
 		hayIngredientes = Boolean.TRUE;
 		//imprimo por pantalla la accion 
-		System.out.println("Vendedor - Se ha agregado fosforo al banco.");
+		System.out.println("Vendedor - Agrego fosforo al banco.");
 		//Se registra el evento en la traza de tipo XML.
-		//Traza.insertarTraza( Hora.horaActual(), "Vendedor", "Se ha agregado  fosforo al banco.");
+		Traza.insertarTraza( Hora.horaActual(), "Vendedor", "Agrego fosforo al banco.");
 		}
 	} 
 

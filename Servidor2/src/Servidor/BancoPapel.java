@@ -17,9 +17,9 @@ public class BancoPapel {
 		//Se agrega Papel al banco.
 		hayIngredientes = Boolean.TRUE;
 		//imprimo por pantalla la accion 
-		System.out.println("Vendedor - Se ha agregado papel al banco.");
+		System.out.println("Vendedor - Agrego papel al banco.");
 		//Se registra el evento en la traza de tipo XML.
-		//Traza.insertarTraza( Hora.horaActual(), "Vendedor", "Se ha agregado  Papel al banco.");
+		Traza.insertarTraza( Hora.horaActual(), "Vendedor", "Agrego papel al banco.");
 		//Se notifica a todos los fumadores que se han puesto ingredientes nuevos en el banco.
 		
 		}
