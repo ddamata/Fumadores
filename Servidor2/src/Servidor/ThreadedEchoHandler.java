@@ -50,23 +50,20 @@ public class ThreadedEchoHandler extends Thread{
 				      while (true) {
 				    	 
 					    	if (ingredientes[0] && ingredientes[1] ){
-					    		System.out.println("Servidor - Fumador(Tabaco) Fuamando.");
-					    		//Traza.insertarTraza(Hora.horaActual(), "Fuamdor (Tabaco)", "Inicia a fumar.");
+					    		System.out.println("Fumador(Tabaco) - Comienza a fumar.");
+					    		Traza.insertarTraza(Hora.horaActual(), "Fumador(Tabaco)", "Comienza a fumar.");
 					    		Thread.sleep(5*1000);
 					    		ingredientes[0] = false;
 					    		ingredientes[1] = false;
-					    		System.out.println("Servidor - Fumador(Tabaco) Deja de fuamar.");
+					    		System.out.println("Fumador(Tabaco) - Termina de fumar.");
 					    		//Se registra el evento en la traza de tipo XML.
-					    		salida.println(Hora.horaActual()+"xFuamdor (Tabaco)xFinaliza de fumar.");
-			 		    		//Traza.insertarTraza(Hora.horaActual(), "Fuamdor (Tabaco)", "Finaliza de fumar.");
+					    		salida.println(Hora.horaActual()+"xFumador(Tabaco)x Finaliza de fumar.");
+			 		    		Traza.insertarTraza(Hora.horaActual(), "Fumador(Tabaco)", "Termina de fumar.");
 					    	}else{
 					    		if (!ingredientes[0]){
 					    			ingredientes[0] = bancoFosforo.RecogerIngredientes(Integer.parseInt(accion[0]));;
 					    			if(ingredientes[0]){
-					    				//System.out.println("Servidor - Fumador(Tabaco) Agarro fosforos.");
-					    				//Se registra el evento en la traza de tipo XML.
-					    				salida.println(Hora.horaActual()+"xFuamdor (Tabaco)xAgarro fosforos.");
-					    				//Traza.insertarTraza(Hora.horaActual(), "Fuamdor (Tabaco)", "Agarro fosforos.");
+					    				salida.println(Hora.horaActual()+"xFumador(Tabaco)x Agarro fosforo del banco.");
 					    			}
 					    			
 					    		}
@@ -74,10 +71,7 @@ public class ThreadedEchoHandler extends Thread{
 					    			ingredientes[1] = bancoPapel.RecogerIngredientes(Integer.parseInt(accion[0]));
 					    		 
 					    			if(ingredientes[1]){
-					    				salida.println(Hora.horaActual()+"xFuamdor (Tabaco)xAgarro fosforos.");
-					    			//System.out.println("Servidor - Fumador(Tabaco) Agarro papel.");
-					    			//Se registra el evento en la traza de tipo XML.
-					    			//Traza.insertarTraza(Hora.horaActual(), "Fuamdor (Tabaco)", "Agarro papel.");}
+					    				salida.println(Hora.horaActual()+"xFumador(Tabaco)x Agarro papel del banco.");
 					    		}
 					    		
 					    	}
@@ -91,23 +85,20 @@ public class ThreadedEchoHandler extends Thread{
 				      while (true) {
 				    	 
 					    	if (ingredientes[0] && ingredientes[1] ){
-					    		System.out.println("Servidor - Fumador(Papel) Fuamando.");
-					    		//Traza.insertarTraza(Hora.horaActual(), "Fuamdor (Papel)", "Inicia a fumar.");
+					    		System.out.println("Fumador(Papel) - Comienza a fumar.");
+					    		Traza.insertarTraza(Hora.horaActual(), "Fumador(Papel)", "Comienza a fumar.");
 					    		Thread.sleep(5*1000);
 					    		ingredientes[0] = false;
 					    		ingredientes[1] = false;
-					    		System.out.println("Servidor - Fumador(Papel) Deja de fuamar.");
-					    		salida.println(Hora.horaActual()+"xFuamdor (Papel)xFinaliza de fumar.");
+					    		System.out.println("Fumador(Papel) - Termina de fumar.");
+					    		salida.println(Hora.horaActual()+"xFumador(Papel)x Termina de fumar.");
 					    		//Se registra el evento en la traza de tipo XML.
-			 		    		//Traza.insertarTraza(Hora.horaActual(), "Fuamdor (Papel)", "Finaliza de fumar.");
+			 		    		Traza.insertarTraza(Hora.horaActual(), "Fumador(Papel)", "Termina de fumar.");
 					    	}else{
 					    		if (!ingredientes[0]){
 					    			ingredientes[0] = bancoFosforo.RecogerIngredientes(Integer.parseInt(accion[0]));;
 					    			if(ingredientes[0]){
-					    				//System.out.println("Servidor - Fumador(Papel) Agarro fosforos.");
-					    				salida.println(Hora.horaActual()+"xFuamdor (Papel)xAgarro fosforos.");
-					    				//Se registra el evento en la traza de tipo XML.
-					    				//Traza.insertarTraza(Hora.horaActual(), "Fuamdor (Papel)", "Agarro fosforos.");
+					    				salida.println(Hora.horaActual()+"xFumador(Papel)x Agarro fosforo del banco.");
 					    			}
 					    			
 					    		}
@@ -115,10 +106,7 @@ public class ThreadedEchoHandler extends Thread{
 					    			ingredientes[1] = bancoTabaco.RecogerIngredientes(Integer.parseInt(accion[0]));
 					    			
 					    			if(ingredientes[1]){
-					    			//System.out.println("Servidor - Fumador(Papel) Agarro Tabaco.");
-					    			//Se registra el evento en la traza de tipo XML.
-					    			salida.println(Hora.horaActual()+"xFuamdor (Papel)xAgarro fosforos.");
-					    			//Traza.insertarTraza(Hora.horaActual(), "Fuamdor (Papel)", "Agarro Tabaco.");}
+					    				salida.println(Hora.horaActual()+"xFumador(Papel)x Agarro tabaco del banco.");
 					    		}
 					    		
 					    	}
@@ -132,35 +120,28 @@ public class ThreadedEchoHandler extends Thread{
 				      while (true) {
 				    	 
 					    	if (ingredientes[0] && ingredientes[1] ){
-					    		System.out.println("Servidor - Fumador(Fosforo) Fuamando.");
-					    		salida.println(Hora.horaActual()+"xFuamdor (Fosforo)x Fuamando.");
-					    		//Traza.insertarTraza(Hora.horaActual(), "Fuamdor (Fosforo)", "Inicia a fumar.");
+					    		System.out.println("Fumador(Fosforo) - Comienza a fumar.");
+					    		salida.println(Hora.horaActual()+"xFumador (Fosforo)x Fumando.");
+					    		Traza.insertarTraza(Hora.horaActual(), "Fumador(Fosforo)", "Comienza a fumar.");
 					    		Thread.sleep(5*1000);
 					    		ingredientes[0] = false;
 					    		ingredientes[1] = false;
-					    		System.out.println("Servidor - Fumador(Fosforo) Deja de fuamar.");
+					    		System.out.println("Fumador(Fosforo) - Termina de fumar.");
 					    		//Se registra el evento en la traza de tipo XML.
-					    		salida.println(Hora.horaActual()+"xFuamdor (Fosforo)xDeja de fuamar.");
-			 		    		//Traza.insertarTraza(Hora.horaActual(), "Fuamdor (Fosforo)", "Finaliza de fumar.");
+					    		salida.println(Hora.horaActual()+"xFumador(Fosforo)x Deja de fumar.");
+			 		    		Traza.insertarTraza(Hora.horaActual(), "Fumador(Fosforo)", "Termina de fumar.");
 					    	}else{
 					    		if (!ingredientes[0]){
 					    			ingredientes[0] = bancoTabaco.RecogerIngredientes(Integer.parseInt(accion[0]));;
 					    			if(ingredientes[0]){
-					    				//System.out.println("Servidor - Fumador(Fosforo) Agarro tabaco.");
-					    				//Se registra el evento en la traza de tipo XML.
-					    				salida.println(Hora.horaActual()+"xFuamdor (Fosforo)xAgarro tabacor.");
-					    				//Traza.insertarTraza(Hora.horaActual(), "Fuamdor (Fosforo)", "Agarro tabaco.");
+					    				salida.println(Hora.horaActual()+"xFumador(Fosforo)x Agarro tabaco del banco.");
 					    			}
 					    			
 					    		}
 					    		if (!ingredientes[1]){
 					    			ingredientes[1] = bancoPapel.RecogerIngredientes(Integer.parseInt(accion[0]));
-					    			
 					    			if(ingredientes[1]){
-					    			//System.out.println("Servidor - Fumador(Fosforo) Agarro papel.");
-					    			//Se registra el evento en la traza de tipo XML.
-					    			salida.println(Hora.horaActual()+"xFuamdor (Fosforo)xAgarro papel.");
-					    			//Traza.insertarTraza(Hora.horaActual(), "Fuamdor (Fosforo)", "Agarro papel.");}
+					    			salida.println(Hora.horaActual()+"xFumador(Fosforo)x Agarro papel del banco.");
 					    		}
 					    		
 					    	}

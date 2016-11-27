@@ -17,7 +17,7 @@ public class BancoPapel {
 		//Se agrega Papel al banco.
 		hayIngredientes = Boolean.TRUE;
 		//imprimo por pantalla la accion 
-		System.out.println("Vendedor - Se ha agregado  papel al banco.");
+		System.out.println("Vendedor - Se ha agregado papel al banco.");
 		//Se registra el evento en la traza de tipo XML.
 		//Traza.insertarTraza( Hora.horaActual(), "Vendedor", "Se ha agregado  Papel al banco.");
 		//Se notifica a todos los fumadores que se han puesto ingredientes nuevos en el banco.
@@ -34,19 +34,19 @@ public class BancoPapel {
 		
 		switch(id){
 		case 0:
-			System.out.println("Fuamdor (Tabaco) -  ha agarrado Papel del banco.");
+			System.out.println("Fumador(Tabaco) -  ha agarrado papel del banco.");
 			//Se registra el evento en la traza de tipo XML.
-			//Traza.insertarTraza(Hora.horaActual(), "Fuamdor 0", "ha agarrado papel del banco.");
+			Traza.insertarTraza(Hora.horaActual(), "Fumador 0", "Agarro papel del banco.");
 		break;
 		case 1:
-			System.out.println("Fumador (Papel)- ha agarrado Papel del banco.");
+			System.out.println("Fumador(Papel) - ha agarrado papel del banco.");
 			//Se registra el evento en la traza de tipo XML.
-			//Traza.insertarTraza(Hora.horaActual(), "Fumador 1", "ha agarrado Papel del banco.");
+			Traza.insertarTraza(Hora.horaActual(), "Fumador 1", "Agarro papel del banco.");
 		break;
 		case 2:
-			System.out.println("Fumador (Fosforo)- ha agarrado Papel del banco.");
+			System.out.println("Fumador(Fosforo) - ha agarrado papel del banco.");
 			//Se registra el evento en la traza de tipo XML.
-			//Traza.insertarTraza(Hora.horaActual(), "Fumador", "ha agarrado Papel del banco");
+			Traza.insertarTraza(Hora.horaActual(), "Fumador 2", "Agarro papel del banco");
 		break;
 	}
 		hayIngredientes = Boolean.FALSE;
