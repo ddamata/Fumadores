@@ -46,10 +46,14 @@ public class Main {
         	//Se envia al servidor el id de usuario junto con el tipo de usuario separado por una X.
 			salida.println("0xFumador");
 			try {
+				//Se itera infinitamente para la escucha de mensajes por parte del servidor con respecto a los hechos ocurridos a ser plasmados en la traza.
 				while(true){
+					//Se comprueba que el canal de comunicacion de entrada contiene informacion.
 					if(entrada.readLine()!=null){
 						//System.out.println(entrada.readLine());
+						//Se trata la informacion recibida para extraer la hora de la accion, actor y mensaje.
 						String mensaje[]= entrada.readLine().split("-");
+						//Se inserta el hecho en la traza
 						traza.insertarTraza(mensaje[0], mensaje[1], mensaje[2]);
 					}
 				}

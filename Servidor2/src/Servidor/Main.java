@@ -14,8 +14,7 @@ public class Main {
 	  
 	  public static void main(String[] args) throws IOException {
 		  Random randomN  = new Random();
-		  System.out.println("Servidor - Servidor principal en funcionamiento.");
-			 
+		  System.out.println("Servidor - Servidor principal en funcionamiento.");		 
 			 switch(randomN.nextInt(3)){
 				case 0:
 					bancoTabaco = new BancoTabaco(Boolean.FALSE);
@@ -42,24 +41,19 @@ public class Main {
 					//t.insertarTraza(Hora.horaActual(), "Fumador", "ha agarrado Fosforos del banco");
 				break;
 			}
-			 
-		 
-		  
 		  int contadorUsuarios=1;
-		  
-    	
 		  try {
-	      //Se crea el socket.
-		  ServerSocket s=new ServerSocket(50008);
-		  //Se implementa un ciclo infinito para la escucha.
-		  for (;;) {
-			//Se espera por una conexi�n via Socket.
-			Socket ss=s.accept();
-			System.out.println("Servidor - Recibiendo conexion numero: "+contadorUsuarios);
-			//Se crea un hilo para manejar al usuario conectado..
-			new ThreadedEchoHandler(ss,contadorUsuarios,bancoTabaco,bancoFosforo,bancoPapel).start();
-			contadorUsuarios++;
-		  }
+		      //Se crea el socket.
+			  ServerSocket s=new ServerSocket(50008);
+			  //Se implementa un ciclo infinito para la escucha.
+			  for (;;) {
+				//Se espera por una conexi�n via Socket.
+				Socket ss=s.accept();
+				System.out.println("Servidor - Recibiendo conexion numero: "+contadorUsuarios);
+				//Se crea un hilo para manejar al usuario conectado..
+				new ThreadedEchoHandler(ss,contadorUsuarios,bancoTabaco,bancoFosforo,bancoPapel).start();
+				contadorUsuarios++;
+			  }
 		  } catch (Exception e) { System.out.println(e); }
 	  }
 	}
